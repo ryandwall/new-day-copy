@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 771px){
-    #mobile-navbar {
+    #mobile-navbar, #dropdown-items {
         display: none !important;
     }
     
@@ -63,14 +63,31 @@ body, html {
     position: absolute;
 }
 
-#hamburger {
-    position: relative;
-    left: 40%;
+.hamburger-button {
+    position: absolute;
+    left: 90%;
     width: 40px;
-    height: 40px;
-    
-   
-    
+    height: 40px;    
+}
+
+
+#dropdown-items {
+    display: none;
+    background-color: rgb(29, 29, 29);
+    list-style: none;
+}
+
+
+#home-hamburger {
+    display: flex;
+}
+
+.navitems-dropdown {
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+    list-style: none;
+    padding: 10px;
 }
 
 #navlinks {
