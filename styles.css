@@ -48,6 +48,7 @@ body, html {
 }
 
 #mobile-navbar {
+    position: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +75,7 @@ body, html {
 #dropdown-items {
     display: none;
     background-color: rgb(29, 29, 29); 
-    color: white
+    color: white;
 }
 
 #services-dropdown {
@@ -223,12 +224,77 @@ body, html {
     margin-right: 10px;
 }
 
+
 #mobile-services-dropdown {
     display: flex;
     align-items: center;
 }
 
+#mobile-os-dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    font-family: Poppins;
+    width: 100vw;
+    background-color: #E6E6E6;
+    color: rgb(29, 29, 29);
+}
+
+.mobile-dropdown-titles {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+    background-color: #f0f2f5;
+}
+
+
+.mobile-dropdown-titles > a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 50px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.mobile-dropdown-titles > a:hover {
+    text-decoration: underline;
+}
+
+
+.mobile-dropdown-items {
+    width: 100vw;
+    margin-left: 10px;
+    font-size: .9.5em;
+}
+
+.mobile-dropdown-items > ul {
+    list-style-type: none;
+}
+
+.mobile-dropdown-items > ul > li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.mobile-dropdown-items > ul >li::before {
+    content: "-";
+    margin-right: 3px;
+}
+
+.mobile-dropdown-items > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-dropdown-items > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+
 .slide-show-imgs {
     width: 100vw;
+    
 }
 
