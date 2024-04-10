@@ -1,23 +1,30 @@
-@media screen and (max-width: 884px) {
+@media screen and (max-width: 900px) {
     #navbar {
         font-size: .8em;
     }
 
     #welcome-info-text {
         max-width: 100vw;
-        background-image: url(images/nyblue-background.jpg);
+        font-size: .9em;
     }
-
 
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 787px) {
     #navbar {
         display: none !important;
     }
+
+    #services-grid-menu {
+        grid-template-columns: 1fr !important;
+    }
+
+    #services-grid-menu > :nth-child(-n + 2) {
+        filter: none !important;
+    }
 }
 
-@media screen and (min-width: 771px){
+@media screen and (min-width: 788px){
     #mobile-navbar, #dropdown-items {
         display: none !important;
     }
@@ -237,7 +244,11 @@ body, html {
     top: 250px;   
 }
 
-
+#arrow-icon {
+    width: 14px;
+    height: 14px;
+    padding-left: 10px;
+}
 
 #phone-number::before {
     content: "";
@@ -352,6 +363,18 @@ body, html {
     display: flex; 
     align-items: center;
     justify-content: center;
+    transition: background-color .5s ease;
+}
+
+#after-slide-show-content > button:hover {
+    cursor: pointer;
+    background-color: #fac40b;
+    color: black;
+    border: 1px solid black;
+}
+
+#after-slide-show-content > button:hover .svg-path {
+    fill: black;
 }
 
 #after-slide-show-content > h1 {
@@ -361,7 +384,7 @@ body, html {
     text-shadow: 2px 2px 4px black;
 }
 
-#welcome-info {
+.welcome-info {
     font-family: poppins;
     color: white;
     background-image: url(images/nyblue-background.jpg);
@@ -372,10 +395,163 @@ body, html {
     align-items: center;
 }
 
+.welcome-info > h2 {
+    margin-top: 50px;
+}
+
+.welcome-info > button {
+    font-size: 1.6em;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 300px;
+    height: 70px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: background-color .5s ease;
+}
+
+.welcome-info > button:hover {
+    cursor: pointer;
+    background-color: #fac40b;
+    color: black;
+    border: 1px solid black;
+}
+
+.welcome-info > button:hover .svg-path {
+    fill: black;
+}
+
+
 #welcome-info-text {
     width: 800px;
     text-align: center;
-    
-
-
 }
+
+#welcome-info-text > p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#services-grid-menu {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services-grid-items {
+    font-family: Poppins;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 187, 0, 0.774), rgb(255, 166, 0));
+}
+
+#services-grid-menu > :nth-child(-n + 2) {
+    filter: drop-shadow(0 8px 8px black);
+}
+
+
+.services-grid-items > img {
+    width: 90%;
+    height: 175px;
+    object-fit: cover;
+    margin-bottom: -30px;
+}
+
+.services-grid-items > strong {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.services-grid-items > p {
+    font-size: .9em;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+.services-grid-items > button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color .5s ease;
+}
+
+.services-grid-items > button:hover {
+    cursor: pointer;
+    background-color: #fac40b;
+    color: black;
+}
+
+.services-grid-items > button:hover .svg-path {
+    fill: black;
+}
+
+#welcome-info > button {
+    font-size: 1.6em;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 300px;
+    height: 70px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: background-color .5s ease;
+}
+
+#welcome-info > button:hover {
+    cursor: pointer;
+    background-color: #fac40b;
+    color: black;
+    border: 1px solid black;
+}
+
+#page-bottom {
+    width: 100vw;
+    font-family: poppins;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/slab-background.jpg);
+}
+
+.page-bottom-items {
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.page-bottom-items > h1 {
+    border-top: 1px dotted #fac40b;
+    border-bottom: 1px dotted #fac40b;
+    font-size: 1.3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page-bottom-items > p {
+    font-size: .9em;
+}
+
+.page-bottom-items > p:first-of-type {
+    margin-top: 45px;
+}
+
+
