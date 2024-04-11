@@ -9,11 +9,22 @@
     }
 
 }
+@media screen and (max-width: 469px){
+    #logo {
+        width: 90%!important;
+        height: auto !important;
+    }
+}
 
 @media screen and (max-width: 787px) {
     #navbar {
         display: none !important;
     }
+
+    #after-slide-show-content > h1 {
+        font-size: 1.3em !important;
+    }
+
 
     #services-grid-menu {
         grid-template-columns: 1fr !important;
@@ -60,6 +71,7 @@ body, html {
 
 
 #navbar {
+    width: 100vw;
     display: flex;
     flex-direction: row; 
     justify-content: space-evenly;
@@ -89,7 +101,7 @@ body, html {
 
 .hamburger-button {
     position: absolute;
-    left: 90%;
+    left: 85%;
     width: 40px;
     height: 40px;    
 }
@@ -178,6 +190,7 @@ body, html {
     font-weight: bold;
     list-style: none;
     padding: 10px;
+    margin-left: -30px;
 }
 
 #navlinks {
@@ -246,7 +259,7 @@ body, html {
 #minus-icon {
     display: none;
     position: absolute;
-    left: 184px;
+    left: 155px;
     top: 250px;   
 }
 
@@ -395,13 +408,14 @@ body, html {
     color: white;
     background-image: url(images/nyblue-background.jpg);
     width: 100vw;
-    height: 250px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .welcome-info > h2 {
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -617,12 +631,12 @@ body, html {
 
 footer {
     width: 100vw;
-    height: 60px;
     font-size: .8em;
     background-color: black;
     color: white;
     font-family: poppins;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
