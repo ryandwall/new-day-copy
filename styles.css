@@ -31,6 +31,12 @@
     
 }
 
+@media screen and (max-width: 1160px){
+    .page-bottom-items {
+        width: 400px !important;
+    }
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -528,10 +534,14 @@ body, html {
     color: white;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-image: url(images/slab-background.jpg);
+    padding-bottom: 80px;
 }
 
 .page-bottom-items {
+    display: flex;
+    flex-direction: column;
     width: 250px;
     margin-left: 20px;
     margin-right: 20px;
@@ -546,12 +556,75 @@ body, html {
     padding-bottom: 20px;
 }
 
+.page-bottom-items > h2 {
+    font-size: 1.1em;
+}
+
+.page-bottom-items > span {
+    font-size: .9em;
+}
+
+.yellow-text {
+    color: #fac40b;
+}
+
+#email-button {
+    margin-top: 20px;
+}
+
+.page-bottom-items > a {
+    color: #fac40b;
+    text-decoration: none;  
+    padding-bottom: 15px;
+}
+
+
 .page-bottom-items > p {
     font-size: .9em;
 }
 
-.page-bottom-items > p:first-of-type {
-    margin-top: 45px;
+.page-bottom-buttons {
+    font-family: Poppins;
+    font-weight: bold;
+    width: 120px;
+    margin-right: 80px;
+}
+
+.page-bottom-buttons:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+#name {
+    margin-top: 20px;
+}
+
+#name, #email, #phone {
+    margin-bottom: 10px;
+    width: 230px;
+    height: 25px;
+}
+
+#message {
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    width: 230px;
+}
+
+.first-line {
+    margin-top: 25px;
+}
+
+footer {
+    width: 100vw;
+    height: 60px;
+    font-size: .8em;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
